@@ -1,0 +1,6 @@
+framework module Pods_DouYin_Shoot {
+  umbrella header "Pods-DouYin-Shoot-umbrella.h"
+
+  export *
+  module * { export * }
+}
