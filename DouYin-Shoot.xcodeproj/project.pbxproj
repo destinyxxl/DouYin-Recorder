@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D024BA7209C69FA00E838B1 /* Timer+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D024BA6209C69FA00E838B1 /* Timer+Extention.swift */; };
 		9DE16485209AF8D200CBE068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE16484209AF8D200CBE068 /* AppDelegate.swift */; };
 		9DE16487209AF8D300CBE068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE16486209AF8D300CBE068 /* ViewController.swift */; };
 		9DE1648A209AF8D300CBE068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE16488209AF8D300CBE068 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		12FF3B152C23EAEA2C0572BA /* Pods-DouYin-Shoot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYin-Shoot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYin-Shoot/Pods-DouYin-Shoot.debug.xcconfig"; sourceTree = "<group>"; };
 		27D43F16A2E5A2997EDCEEDF /* Pods-DouYin-Shoot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYin-Shoot.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYin-Shoot/Pods-DouYin-Shoot.release.xcconfig"; sourceTree = "<group>"; };
 		7278D03214F6F892FF7FB28F /* Pods_DouYin_Shoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYin_Shoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D024BA6209C69FA00E838B1 /* Timer+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extention.swift"; sourceTree = "<group>"; };
 		9DE16481209AF8D200CBE068 /* DouYin-Shoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DouYin-Shoot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE16484209AF8D200CBE068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DE16486209AF8D300CBE068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9D024BA5209C69FA00E838B1 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				9D024BA6209C69FA00E838B1 /* Timer+Extention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		9DE16478209AF8D200CBE068 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 				9DE16486209AF8D300CBE068 /* ViewController.swift */,
 				9DE1649D209AF9DB00CBE068 /* RecordBottomView.swift */,
 				9DE164A0209AFB9C00CBE068 /* Const.swift */,
+				9D024BA5209C69FA00E838B1 /* Extention */,
 				9DE16499209AF8FC00CBE068 /* ProgressView */,
 				9DE16488209AF8D300CBE068 /* Main.storyboard */,
 				9DE1648B209AF8D300CBE068 /* Assets.xcassets */,
@@ -242,6 +253,7 @@
 				9DE1649C209AF8FC00CBE068 /* QUProgressView.m in Sources */,
 				9DE16487209AF8D300CBE068 /* ViewController.swift in Sources */,
 				9DE16485209AF8D200CBE068 /* AppDelegate.swift in Sources */,
+				9D024BA7209C69FA00E838B1 /* Timer+Extention.swift in Sources */,
 				9DE164A1209AFB9C00CBE068 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +403,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 774AZPM52B;
 				INFOPLIST_FILE = "DouYin-Shoot/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weshion.www.DouYin-Shoot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DouYin-Shoot/DouYin-Shoot-Bridging-Header.h";
@@ -410,7 +425,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 774AZPM52B;
 				INFOPLIST_FILE = "DouYin-Shoot/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weshion.www.DouYin-Shoot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DouYin-Shoot/DouYin-Shoot-Bridging-Header.h";

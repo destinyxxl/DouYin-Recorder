@@ -157,7 +157,7 @@ class RecordBottomView: UIView, UIScrollViewDelegate {
         
 //        touchStartTime = 0
         updateRecordTypeToEndRecord()
-//        delegate?.SMRecordBottomViewRecordStop()
+        delegate?.SMRecordBottomViewRecordStop()
     }
     
     func updateRecordTypeToEndRecord() {

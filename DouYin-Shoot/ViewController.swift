@@ -12,6 +12,10 @@ class ViewController: UIViewController, SMRecordBottomViewDelegate {
     
     var progressView: QUProgressView!
     
+    var timer: Timer?
+    
+    var duration: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.init(red: 147/255.0, green: 237/255.0, blue: 148/255.0, alpha: 1)
@@ -33,15 +37,24 @@ class ViewController: UIViewController, SMRecordBottomViewDelegate {
         }
         
     }
-
     
+    @objc func recordUpdateWithDuration(_ timer: Timer) {
+        duration += CGFloat(timer.timeInterval)
+        progressView.updateProgress(duration)
+    }
+
     func SMRecordBottomViewRecordStart() {
         progressView.showBlink = false
         progressView.videoCount += 1
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(recordUpdateWithDuration(_:)), userInfo: nil, repeats: true)
+        } else {
+            timer?.resume()
+        }
     }
     
     func SMRecordBottomViewRecordStop() {
-        
+        timer?.pause()
     }
     
     func SMRecordBottomViewRecordError() {

@@ -9,7 +9,7 @@
 #import "QUProgressView.h"
 
 #define backGroundColor [UIColor lightGrayColor]
-#define tintColor [UIColor yellowColor]
+#define tintColor [UIColor blueColor]
 #define deleteColor [UIColor redColor]
 @implementation QUProgressView {
     NSTimer *_timer;
